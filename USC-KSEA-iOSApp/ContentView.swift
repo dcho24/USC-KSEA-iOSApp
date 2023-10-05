@@ -26,4 +26,4 @@ struct ContentView: View {
 }
 
 //test changes by jae oct 4th
-
+//test changes 1.2
