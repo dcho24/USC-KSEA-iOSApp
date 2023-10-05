@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-//test changes by jae oct 4th
+
 
 struct ContentView: View {
     var body: some View {
@@ -19,11 +19,12 @@ struct ContentView: View {
         .padding()
     }
 }
-//test changes by jae oct 4th
+
 
 #Preview {
     ContentView()
 }
 
-//test changes by jae oct 4th
-//test changes 1.2
+
+
+//KSEA IOS APp
