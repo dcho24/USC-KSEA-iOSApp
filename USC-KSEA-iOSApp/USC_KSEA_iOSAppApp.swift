@@ -11,8 +11,8 @@ import SwiftUI
 struct USC_KSEA_iOSAppApp: App {
     var body: some Scene {
         WindowGroup {
+        
             ContentView()
-           //hello
         }
     }
 }
