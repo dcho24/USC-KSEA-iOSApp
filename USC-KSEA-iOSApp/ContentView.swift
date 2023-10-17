@@ -14,7 +14,7 @@ struct ContentView: View {
     var body: some View {
         GeometryReader { geometry in
             ZStack {
-                VStack { // background
+                VStack { // code for background
                     Rectangle()
                         .foregroundColor(.clear)
                         .frame(width: screenWidth, height: screenHeight * 0.4)
