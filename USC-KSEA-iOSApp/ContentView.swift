@@ -22,6 +22,7 @@ struct ContentView: View {
                                 .edgesIgnoringSafeArea(.all)
                                 .overlay(
                                     Color(red: 0.62, green: 0.13, blue: 0.21).opacity(0.70)
+                                    // hello
                                 )
                         )
                     Spacer().frame(height:503)
