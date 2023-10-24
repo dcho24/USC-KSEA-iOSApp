@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A515E27B2AE71B5700F8D8BE /* Footer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A515E27A2AE71B5700F8D8BE /* Footer.swift */; };
+		A515E27D2AE72B5900F8D8BE /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A515E27C2AE72B5900F8D8BE /* HomeView.swift */; };
 		A56D842F2ACE3A2100ABDFF4 /* USC_KSEA_iOSAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56D842E2ACE3A2100ABDFF4 /* USC_KSEA_iOSAppApp.swift */; };
 		A56D84312ACE3A2100ABDFF4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56D84302ACE3A2100ABDFF4 /* ContentView.swift */; };
 		A56D84332ACE3A2300ABDFF4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A56D84322ACE3A2300ABDFF4 /* Assets.xcassets */; };
@@ -14,6 +16,7 @@
 		A56D84402ACE3A2400ABDFF4 /* USC_KSEA_iOSAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56D843F2ACE3A2400ABDFF4 /* USC_KSEA_iOSAppTests.swift */; };
 		A56D844A2ACE3A2400ABDFF4 /* USC_KSEA_iOSAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56D84492ACE3A2400ABDFF4 /* USC_KSEA_iOSAppUITests.swift */; };
 		A56D844C2ACE3A2400ABDFF4 /* USC_KSEA_iOSAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56D844B2ACE3A2400ABDFF4 /* USC_KSEA_iOSAppUITestsLaunchTests.swift */; };
+		A58D65492AE37FA80078BCC3 /* SplashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A58D65482AE37FA80078BCC3 /* SplashScreenView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A515E27A2AE71B5700F8D8BE /* Footer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Footer.swift; sourceTree = "<group>"; };
+		A515E27C2AE72B5900F8D8BE /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		A56D842B2ACE3A2100ABDFF4 /* USC-KSEA-iOSApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "USC-KSEA-iOSApp.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A56D842E2ACE3A2100ABDFF4 /* USC_KSEA_iOSAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = USC_KSEA_iOSAppApp.swift; sourceTree = "<group>"; };
 		A56D84302ACE3A2100ABDFF4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -44,6 +49,7 @@
 		A56D84452ACE3A2400ABDFF4 /* USC-KSEA-iOSAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "USC-KSEA-iOSAppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A56D84492ACE3A2400ABDFF4 /* USC_KSEA_iOSAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = USC_KSEA_iOSAppUITests.swift; sourceTree = "<group>"; };
 		A56D844B2ACE3A2400ABDFF4 /* USC_KSEA_iOSAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = USC_KSEA_iOSAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A58D65482AE37FA80078BCC3 /* SplashScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +104,9 @@
 				A56D84302ACE3A2100ABDFF4 /* ContentView.swift */,
 				A56D84322ACE3A2300ABDFF4 /* Assets.xcassets */,
 				A56D84342ACE3A2300ABDFF4 /* Preview Content */,
+				A58D65482AE37FA80078BCC3 /* SplashScreenView.swift */,
+				A515E27A2AE71B5700F8D8BE /* Footer.swift */,
+				A515E27C2AE72B5900F8D8BE /* HomeView.swift */,
 			);
 			path = "USC-KSEA-iOSApp";
 			sourceTree = "<group>";
@@ -259,6 +268,9 @@
 			files = (
 				A56D84312ACE3A2100ABDFF4 /* ContentView.swift in Sources */,
 				A56D842F2ACE3A2100ABDFF4 /* USC_KSEA_iOSAppApp.swift in Sources */,
+				A58D65492AE37FA80078BCC3 /* SplashScreenView.swift in Sources */,
+				A515E27D2AE72B5900F8D8BE /* HomeView.swift in Sources */,
+				A515E27B2AE71B5700F8D8BE /* Footer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
