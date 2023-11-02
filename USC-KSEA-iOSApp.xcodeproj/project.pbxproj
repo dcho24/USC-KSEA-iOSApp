@@ -13,10 +13,10 @@
 		A56D84312ACE3A2100ABDFF4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56D84302ACE3A2100ABDFF4 /* ContentView.swift */; };
 		A56D84332ACE3A2300ABDFF4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A56D84322ACE3A2300ABDFF4 /* Assets.xcassets */; };
 		A56D84362ACE3A2300ABDFF4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A56D84352ACE3A2300ABDFF4 /* Preview Assets.xcassets */; };
-		A56D84402ACE3A2400ABDFF4 /* USC_KSEA_iOSAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56D843F2ACE3A2400ABDFF4 /* USC_KSEA_iOSAppTests.swift */; };
-		A56D844A2ACE3A2400ABDFF4 /* USC_KSEA_iOSAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56D84492ACE3A2400ABDFF4 /* USC_KSEA_iOSAppUITests.swift */; };
-		A56D844C2ACE3A2400ABDFF4 /* USC_KSEA_iOSAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56D844B2ACE3A2400ABDFF4 /* USC_KSEA_iOSAppUITestsLaunchTests.swift */; };
 		A58D65492AE37FA80078BCC3 /* SplashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A58D65482AE37FA80078BCC3 /* SplashScreenView.swift */; };
+		A5E0F4652AF0C0A9001F868C /* AboutUs.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E0F4642AF0C0A9001F868C /* AboutUs.swift */; };
+		A5E0F4672AF0C1EE001F868C /* Eboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E0F4662AF0C1EE001F868C /* Eboard.swift */; };
+		A5E0F4692AF0C21F001F868C /* Gallery.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5E0F4682AF0C21F001F868C /* Gallery.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,11 +45,11 @@
 		A56D84322ACE3A2300ABDFF4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A56D84352ACE3A2300ABDFF4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A56D843B2ACE3A2400ABDFF4 /* USC-KSEA-iOSAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "USC-KSEA-iOSAppTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		A56D843F2ACE3A2400ABDFF4 /* USC_KSEA_iOSAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = USC_KSEA_iOSAppTests.swift; sourceTree = "<group>"; };
 		A56D84452ACE3A2400ABDFF4 /* USC-KSEA-iOSAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "USC-KSEA-iOSAppUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		A56D84492ACE3A2400ABDFF4 /* USC_KSEA_iOSAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = USC_KSEA_iOSAppUITests.swift; sourceTree = "<group>"; };
-		A56D844B2ACE3A2400ABDFF4 /* USC_KSEA_iOSAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = USC_KSEA_iOSAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		A58D65482AE37FA80078BCC3 /* SplashScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenView.swift; sourceTree = "<group>"; };
+		A5E0F4642AF0C0A9001F868C /* AboutUs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutUs.swift; sourceTree = "<group>"; };
+		A5E0F4662AF0C1EE001F868C /* Eboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Eboard.swift; sourceTree = "<group>"; };
+		A5E0F4682AF0C21F001F868C /* Gallery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gallery.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,8 +81,6 @@
 			isa = PBXGroup;
 			children = (
 				A56D842D2ACE3A2100ABDFF4 /* USC-KSEA-iOSApp */,
-				A56D843E2ACE3A2400ABDFF4 /* USC-KSEA-iOSAppTests */,
-				A56D84482ACE3A2400ABDFF4 /* USC-KSEA-iOSAppUITests */,
 				A56D842C2ACE3A2100ABDFF4 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -100,6 +98,9 @@
 		A56D842D2ACE3A2100ABDFF4 /* USC-KSEA-iOSApp */ = {
 			isa = PBXGroup;
 			children = (
+				A5E0F4682AF0C21F001F868C /* Gallery.swift */,
+				A5E0F4662AF0C1EE001F868C /* Eboard.swift */,
+				A5E0F4642AF0C0A9001F868C /* AboutUs.swift */,
 				A56D842E2ACE3A2100ABDFF4 /* USC_KSEA_iOSAppApp.swift */,
 				A56D84302ACE3A2100ABDFF4 /* ContentView.swift */,
 				A56D84322ACE3A2300ABDFF4 /* Assets.xcassets */,
@@ -117,23 +118,6 @@
 				A56D84352ACE3A2300ABDFF4 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		A56D843E2ACE3A2400ABDFF4 /* USC-KSEA-iOSAppTests */ = {
-			isa = PBXGroup;
-			children = (
-				A56D843F2ACE3A2400ABDFF4 /* USC_KSEA_iOSAppTests.swift */,
-			);
-			path = "USC-KSEA-iOSAppTests";
-			sourceTree = "<group>";
-		};
-		A56D84482ACE3A2400ABDFF4 /* USC-KSEA-iOSAppUITests */ = {
-			isa = PBXGroup;
-			children = (
-				A56D84492ACE3A2400ABDFF4 /* USC_KSEA_iOSAppUITests.swift */,
-				A56D844B2ACE3A2400ABDFF4 /* USC_KSEA_iOSAppUITestsLaunchTests.swift */,
-			);
-			path = "USC-KSEA-iOSAppUITests";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -266,11 +250,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A5E0F4692AF0C21F001F868C /* Gallery.swift in Sources */,
 				A56D84312ACE3A2100ABDFF4 /* ContentView.swift in Sources */,
 				A56D842F2ACE3A2100ABDFF4 /* USC_KSEA_iOSAppApp.swift in Sources */,
 				A58D65492AE37FA80078BCC3 /* SplashScreenView.swift in Sources */,
+				A5E0F4652AF0C0A9001F868C /* AboutUs.swift in Sources */,
 				A515E27D2AE72B5900F8D8BE /* HomeView.swift in Sources */,
 				A515E27B2AE71B5700F8D8BE /* Footer.swift in Sources */,
+				A5E0F4672AF0C1EE001F868C /* Eboard.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,7 +265,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A56D84402ACE3A2400ABDFF4 /* USC_KSEA_iOSAppTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,8 +272,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A56D844C2ACE3A2400ABDFF4 /* USC_KSEA_iOSAppUITestsLaunchTests.swift in Sources */,
-				A56D844A2ACE3A2400ABDFF4 /* USC_KSEA_iOSAppUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
