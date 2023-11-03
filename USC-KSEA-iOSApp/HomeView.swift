@@ -156,7 +156,7 @@ struct HomeView: View {
                             .offset(y: -geometry.size.height / 7)
                     }
 
-                    Spacer(minLength: 118) //moves footer up and down
+                    Spacer(minLength: 118) //moves footer up and down.
                     Footer(selectedTab: $selectedTab)
                 }
             }

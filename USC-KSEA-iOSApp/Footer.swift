@@ -103,7 +103,7 @@ struct Footer_Previews:
     PreviewProvider {
         static var previews: some
         View {
-            // selectedTab = 0 for now
+            // selectedTab = 0 for now.
             Footer(selectedTab: .constant(0))
         
     }
