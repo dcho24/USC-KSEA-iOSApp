@@ -8,109 +8,103 @@
 import SwiftUI
 
 struct Footer: View {
+    @Binding var selectedTab: Int
     var body: some View {
-        
-        
-                VStack(spacing: 0) {
-                    ScrollView {
-                        // contents
+
+        VStack(spacing: 0) {
+            // Yellow band
+            Rectangle()
+                .foregroundColor(.clear)
+                .frame(height: 16)
+                .frame(maxWidth: .infinity)
+                .background(Color(red:1, green:0.78, blue: 0.17))
+            
+            // Red background
+            ZStack {
+                Rectangle()
+                    .padding(EdgeInsets(top:0, leading:0, bottom:0, trailing:0))
+                    .foregroundColor(.clear)
+                    .frame(height: 74)
+                    .frame(width: .infinity)
+                    .background(Color(red:0.62, green: 0.13, blue: 0.21))
+                // Icons and bars
+                // Rectangle() = bars
+                // HStack = icons
+                HStack {
+                    HStack{
+                        Spacer()
+                        Button (action: {
+                            selectedTab = 0
+                        }) {
+                            Image(selectedTab == 0 ? "home-g" : "home-w")
+                        }
+                        Spacer()
                     }
-                    Spacer()
-//         Yellow rectangle footer
                     Rectangle()
                         .foregroundColor(.clear)
-                        .frame(height: 16)
-                        .frame(maxWidth: .infinity)
-                        .background(Color(red:1, green:0.78, blue: 0.17))
-        
-                    ZStack {
-                        Rectangle()
-                            .padding(EdgeInsets(top:0, leading:0, bottom:0, trailing:0))
-                            .foregroundColor(.clear)
-                            .frame(height: 74)
-                            .frame(width: .infinity)
-                            .background(Color(red:0.62, green: 0.13, blue: 0.21))
-                        HStack {
-                            HStack{
-                                Spacer()
-                                Image("home-01")
-                                Spacer()
-                            }
-                            Rectangle()
-                                .foregroundColor(.clear)
-                                .frame(width: 1.5, height: 30)
-                                .background(.white)
-                            HStack {
-                                Spacer()
-                                Image("help-square-contained")
-                                Spacer()
-                            }
-                            Rectangle()
-                                .foregroundColor(.clear)
-                                .frame(width: 1.5, height: 30)
-                                .background(.white)
-                            HStack {
-                                Spacer()
-                                Image("users-profiles-02")
-                                Spacer()
-                            }
-                            Rectangle()
-                                .foregroundColor(.clear)
-                                .frame(width: 1.5, height: 30)
-                                .background(.white)
-                            HStack {
-                                Spacer()
-                                Image("image-02")
-                                Spacer()
-                            }
-                            Rectangle()
-                                .foregroundColor(.clear)
-                                .frame(width: 1.5, height: 30)
-                                .background(.white)
-                            HStack {
-                                Spacer()
-                                Image("email")
-                                Spacer()
-                            }
-                        } // HStack
-                        TabView {
-                            HomeView()
-                                .tabItem(){
-                                    Image("home-w")
-                                }
-                            AboutUs()
-                                .tabItem(){
-                                    Image("help-w")
-                                }
-                            Eboard()
-                                .tabItem(){
-                                    Image("profile-w")
-                                }
-                            Gallery()
-                                .tabItem(){
-                                    Image("picture-w")
-                                }
-                            ContactUs()
-                                .tabItem(){
-                                    Image("email-w")
-                                }
-        
+                        .frame(width: 1.5, height: 30)
+                        .background(.white)
+                    HStack{
+                        Spacer()
+                        Button (action: {
+                            selectedTab = 1
+                        }) {
+                            Image(selectedTab == 1 ? "help-g" : "help-w")
                         }
-                    } // ZStack
-                } // VStack
-        
-            }
-        
-
+                        Spacer()
+                    }
+                    Rectangle()
+                        .foregroundColor(.clear)
+                        .frame(width: 1.5, height: 30)
+                        .background(.white)
+                    HStack{
+                        Spacer()
+                        Button (action: {
+                            selectedTab = 2
+                        }) {
+                            Image(selectedTab == 2 ? "profile-g" : "profile-w")
+                        }
+                        Spacer()
+                    }
+                    Rectangle()
+                        .foregroundColor(.clear)
+                        .frame(width: 1.5, height: 30)
+                        .background(.white)
+                    HStack{
+                        Spacer()
+                        Button (action: {
+                            selectedTab = 3
+                        }) {
+                            Image(selectedTab == 3 ? "picture-g" : "picture-w")
+                        }
+                        Spacer()
+                    }
+                    Rectangle()
+                        .foregroundColor(.clear)
+                        .frame(width: 1.5, height: 30)
+                        .background(.white)
+                    HStack{
+                        Spacer()
+                        Button (action: {
+                            selectedTab = 4
+                        }) {
+                            Image(selectedTab == 4 ? "email-g" : "email-w")
+                        }
+                        Spacer()
+                    }
+                } // HStack
+            } // ZStack
+        } // VStack
+ 
+    }
 }
-        
+
 struct Footer_Previews:
     PreviewProvider {
         static var previews: some
         View {
-            Footer()
-
+            // selectedTab = 0 for now
+            Footer(selectedTab: .constant(0))
+        
     }
 }
-
-
