@@ -5,4 +5,21 @@
 //  Created by Jessica Hahm on 11/6/23.
 //
 
-import Foundation
+import SwiftUI
+
+struct ContactUs: View {
+    var body: some View {
+        VStack {
+            Text("Contact Us")
+                .font(.largeTitle)
+                .padding()
+
+        }
+    }
+}
+
+struct ContactUs_Previews: PreviewProvider {
+    static var previews: some View {
+        ContactUs()
+    }
+}

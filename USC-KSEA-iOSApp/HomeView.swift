@@ -12,6 +12,7 @@ struct HomeView: View {
     @State private var isImage1Pressed: Bool = false //for "kbbq"
     @State private var isImage2Pressed: Bool = false //for "Group_Image2"
     @State private var isImage3Pressed: Bool = false //for "springgm"
+    @State private var isMenuPressed: Bool = false // for menubar
 
     var body: some View {
         NavigationView {
@@ -32,7 +33,14 @@ struct HomeView: View {
                         VStack(spacing: 5) {
                             // header icons
                             HStack {
-                                Image("menu-01").frame(width: 24, height: 24)
+                                NavigationLink(destination: MenuBar().navigationBarBackButtonHidden(true)){
+                                    Image("menu-01").frame(width: 24, height: 24)
+                                    
+                                }.gesture(
+                                    DragGesture(minimumDistance: 0)
+                                        .onChanged({_ in  isMenuPressed = true})
+                                        .onEnded({_ in  isMenuPressed = false})
+                                )
                                 Spacer()
                                 Image("Sash Logo 1")
                                     .resizable()
@@ -168,3 +176,4 @@ struct HomeView_Previews: PreviewProvider {
         HomeView()
     }
 }
+
