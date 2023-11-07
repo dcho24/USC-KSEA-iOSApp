@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A44E8D1D2AF9ECEB00D96B86 /* ContactUs.swift in Sources */ = {isa = PBXBuildFile; fileRef = A44E8D1C2AF9ECEB00D96B86 /* ContactUs.swift */; };
+		A44E8D1F2AF9ECF400D96B86 /* MenuBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = A44E8D1E2AF9ECF400D96B86 /* MenuBar.swift */; };
 		A515E27B2AE71B5700F8D8BE /* Footer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A515E27A2AE71B5700F8D8BE /* Footer.swift */; };
 		A515E27D2AE72B5900F8D8BE /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A515E27C2AE72B5900F8D8BE /* HomeView.swift */; };
 		A56D842F2ACE3A2100ABDFF4 /* USC_KSEA_iOSAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56D842E2ACE3A2100ABDFF4 /* USC_KSEA_iOSAppApp.swift */; };
@@ -37,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A44E8D1C2AF9ECEB00D96B86 /* ContactUs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactUs.swift; sourceTree = "<group>"; };
+		A44E8D1E2AF9ECF400D96B86 /* MenuBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBar.swift; sourceTree = "<group>"; };
 		A515E27A2AE71B5700F8D8BE /* Footer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Footer.swift; sourceTree = "<group>"; };
 		A515E27C2AE72B5900F8D8BE /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		A56D842B2ACE3A2100ABDFF4 /* USC-KSEA-iOSApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "USC-KSEA-iOSApp.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -108,6 +112,8 @@
 				A58D65482AE37FA80078BCC3 /* SplashScreenView.swift */,
 				A515E27A2AE71B5700F8D8BE /* Footer.swift */,
 				A515E27C2AE72B5900F8D8BE /* HomeView.swift */,
+				A44E8D1C2AF9ECEB00D96B86 /* ContactUs.swift */,
+				A44E8D1E2AF9ECF400D96B86 /* MenuBar.swift */,
 			);
 			path = "USC-KSEA-iOSApp";
 			sourceTree = "<group>";
@@ -254,10 +260,12 @@
 				A56D84312ACE3A2100ABDFF4 /* ContentView.swift in Sources */,
 				A56D842F2ACE3A2100ABDFF4 /* USC_KSEA_iOSAppApp.swift in Sources */,
 				A58D65492AE37FA80078BCC3 /* SplashScreenView.swift in Sources */,
+				A44E8D1F2AF9ECF400D96B86 /* MenuBar.swift in Sources */,
 				A5E0F4652AF0C0A9001F868C /* AboutUs.swift in Sources */,
 				A515E27D2AE72B5900F8D8BE /* HomeView.swift in Sources */,
 				A515E27B2AE71B5700F8D8BE /* Footer.swift in Sources */,
 				A5E0F4672AF0C1EE001F868C /* Eboard.swift in Sources */,
+				A44E8D1D2AF9ECEB00D96B86 /* ContactUs.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
