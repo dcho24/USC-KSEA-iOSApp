@@ -12,6 +12,8 @@ import SwiftUI
 
 // yellow when user clicks the button.
 struct MenuBar: View {
+    
+    // plz work
     @State private var isHome = false
     @State private var isAboutUs = false
     @State private var isEBoard = false
