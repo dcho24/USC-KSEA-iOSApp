@@ -1,8 +1,18 @@
-//
-//  ContactUs.swift
-//  USC-KSEA-iOSApp
-//
-//  Created by Jessica Hahm on 11/6/23.
-//
+import SwiftUI
 
-import Foundation
+struct ContactUs: View {
+    var body: some View {
+        VStack {
+            Text("ContactUs")
+                .font(.largeTitle)
+                .padding()
+
+        }
+    }
+}
+
+struct ContactUs_Previews: PreviewProvider {
+    static var previews: some View {
+        ContactUs()
+    }
+}
