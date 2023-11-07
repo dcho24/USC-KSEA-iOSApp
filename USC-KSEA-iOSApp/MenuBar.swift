@@ -23,7 +23,7 @@ struct MenuBar: View {
         NavigationView{
             GeometryReader { geometry in
                 VStack {
-                    // Footer
+                    // hello
                     ZStack {
                         Image("IMG_2038")
                             .resizable()

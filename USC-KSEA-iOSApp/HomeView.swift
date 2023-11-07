@@ -18,7 +18,7 @@ struct HomeView: View {
         NavigationView {
             GeometryReader { geometry in
                 VStack {
-                    // 1/3 top of screen
+                    // 1/3 top
                     ZStack {
                         Image("IMG_2038")
                             .resizable()
