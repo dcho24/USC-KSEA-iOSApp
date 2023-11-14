@@ -24,8 +24,6 @@ struct Footer: View {
                 case .ContactUs:
                     ContactUs()
                 }
-                
-                
                 // Yellow band
                 Rectangle()
                     .foregroundColor(.clear)
