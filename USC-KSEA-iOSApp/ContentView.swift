@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct ContentView: View {
+    @State private var selectedTab: Tab = .HomeView
     var body: some View {
         GeometryReader{geometry in
             ZStack{
@@ -62,6 +63,7 @@ struct ContentView: View {
                 .bold()
                 
             }
+            Footer(selectedTab: $selectedTab)
         }
         
     }

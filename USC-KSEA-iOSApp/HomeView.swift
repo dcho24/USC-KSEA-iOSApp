@@ -13,7 +13,7 @@ struct HomeView: View {
     @State private var isImage2Pressed: Bool = false //for "Group_Image2"
     @State private var isImage3Pressed: Bool = false //for "springgm"
 
-    @State private var selectedTab = 0
+
     var body: some View {
         NavigationView {
             GeometryReader { geometry in
@@ -157,7 +157,7 @@ struct HomeView: View {
                     }
 
                     Spacer(minLength: 118) //moves footer up and down.
-                    Footer(selectedTab: $selectedTab)
+//                    
                 }
             }
         }
