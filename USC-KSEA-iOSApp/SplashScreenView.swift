@@ -61,6 +61,6 @@ struct SplashScreenView_Previews: PreviewProvider {
     }
 }
 
-#Preview {
-    SplashScreenView()
-}
+//#Preview {
+//    SplashScreenView()
+//}

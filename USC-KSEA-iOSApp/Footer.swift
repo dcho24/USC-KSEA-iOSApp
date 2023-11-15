@@ -8,72 +8,109 @@
 import SwiftUI
 
 struct Footer: View {
+    @Binding var selectedTab: Tab
     var body: some View {
-
-        VStack(spacing: 0) {
-            ScrollView {
-                // contents
-            }
-            Spacer()
-            // Yellow rectangle footer
-            Rectangle()
-                .foregroundColor(.clear)
-                .frame(height: 16)
-                .frame(maxWidth: .infinity)
-                .background(Color(red:1, green:0.78, blue: 0.17))
-            
-            ZStack {
+        GeometryReader { geometry in
+            VStack(spacing: 0) {
+                switch selectedTab {
+                case .HomeView:
+                    HomeView()
+                case .AboutUs:
+                    AboutUs()
+                case .Eboard:
+                    Eboard()
+                case .Gallery:
+                    Gallery()
+                case .ContactUs:
+                    ContactUs()
+                }
+                // Yellow band
                 Rectangle()
-                    .padding(EdgeInsets(top:0, leading:0, bottom:0, trailing:0))
                     .foregroundColor(.clear)
-                    .frame(height: 74)
-                    .frame(width: .infinity)
-                    .background(Color(red:0.62, green: 0.13, blue: 0.21))
-                HStack {
-                    HStack{
-                        Spacer()
-                        Image("home-01")
-                        Spacer()
-                    }
+                    .frame(height: 16)
+                    .frame(maxWidth: .infinity)
+                    .background(Color(red:1, green:0.78, blue: 0.17))
+                
+                // Red background
+                ZStack {
                     Rectangle()
+                        .padding(EdgeInsets(top:0, leading:0, bottom:0, trailing:0))
                         .foregroundColor(.clear)
-                        .frame(width: 1.5, height: 30)
-                        .background(.white)
+                        .frame(height: 74)
+                        .frame(width: .infinity)
+                        .background(Color(red:0.62, green: 0.13, blue: 0.21))
+                    // Icons and bars
+                    // Rectangle() = bars
+                    // HStack = icons
                     HStack {
-                        Spacer()
-                        Image("help-square-contained")
-                        Spacer()
+                        Button {
+                            selectedTab = .HomeView
+                        } label: {
+                            VStack {
+                                Image(selectedTab == .HomeView ? "home-g" : "home-w")
+                            }
+                            //                        Spacer()
+                        }
+                        Divider()
+                            .frame(width: 1.5, height: 30)
+                            .background(Color.white)
+//                            .padding([.leading, .trailing], 10)
+                            .padding(.horizontal, geometry.size.width * 0.03)
+                        
+                        Button {
+                            selectedTab = .AboutUs
+                        } label: {
+                            VStack {
+                                Image(selectedTab == .AboutUs ? "help-g" : "help-w")
+
+                            }
+                        }
+                        Divider()
+                            .frame(width: 1.5, height: 30)
+                            .background(Color.white)
+//                            .padding([.leading, .trailing], 10)
+                            .padding(.horizontal, geometry.size.width * 0.03)
+                        
+                        Button {
+                            selectedTab = .Eboard
+                        } label: {
+                            VStack {
+                                Image(selectedTab == .Eboard ? "profile-g" : "profile-w")
+                            }
+                        }
+                        Divider()
+                            .frame(width: 1.5, height: 30)
+                            .background(Color.white)
+//                            .padding([.leading, .trailing], 10)
+                            .padding(.horizontal, geometry.size.width * 0.03)
+                        
+                        Button {
+                            selectedTab = .Gallery
+                        } label: {
+                            VStack {
+                                Image(selectedTab == .Gallery ? "picture-g" : "picture-w")
+                            }
+                        }
+                        Divider()
+                            .frame(width: 1.5, height: 30)
+                            .background(Color.white)
+//                            .padding([.leading, .trailing], 10)
+                            .padding(.horizontal, geometry.size.width * 0.03)
+                        
+                        Button {
+                            selectedTab = .ContactUs
+                        } label: {
+                            VStack {
+                                Image(selectedTab == .ContactUs ? "email-g" : "email-w")
+                            }
+                        }
+                        
                     }
-                    Rectangle()
-                        .foregroundColor(.clear)
-                        .frame(width: 1.5, height: 30)
-                        .background(.white)
-                    HStack {
-                        Spacer()
-                        Image("users-profiles-02")
-                        Spacer()
-                    }
-                    Rectangle()
-                        .foregroundColor(.clear)
-                        .frame(width: 1.5, height: 30)
-                        .background(.white)
-                    HStack {
-                        Spacer()
-                        Image("image-02")
-                        Spacer()
-                    }
-                    Rectangle()
-                        .foregroundColor(.clear)
-                        .frame(width: 1.5, height: 30)
-                        .background(.white)
-                    HStack {
-                        Spacer()
-                        Image("email")
-                        Spacer()
-                    }
-                } // HStack
-            } // ZStack
-        } // VStack
+                    .padding(.horizontal)
+
+                } // ZStack
+            } // VStack
+        }
  
     }
 }
@@ -82,7 +119,12 @@ struct Footer_Previews:
     PreviewProvider {
         static var previews: some
         View {
-            Footer()
+            // selectedTab = 0 for now.
+            Footer(selectedTab: .constant(.HomeView))
         
     }
+}
+
+enum Tab {
+    case HomeView, AboutUs, Eboard, Gallery, ContactUs
 }
